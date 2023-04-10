@@ -1,0 +1,87 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /* 20px superior/inferior, 0=laterales*/
+}
+.caja{
+    width: 940px;   /*ancho*/
+    position: relative;  /**/
+    margin: 0 auto;  /*el operdor calcula el valor automatico */
+}
+nav{
+    position: absolute;
+    top:110px;    /*arriba*/
+    right: 0px;
+}
+nav li{            /*el display no ocupara el 100% solo lo que ocupa, con la linea de abajo lo pone en horizontal */
+    display: inline;
+    margin: 0 0 0 15px;   /*4 parametros arriba derecha abajo izquierda*/
+}
+
+nav a{   /*se pone primero nav y luego la a porque nav abarca ul y a padre/hijo*/
+    text-transform: uppercase;   /*Vamos a tranformar el texto de las etiquetas a mayusculas*/
+    color: #000000;
+    font-weight: bold;  /*poner el texto en negritas*/
+    font-size: 22px; /*tamalo de la pantalla*/
+    text-decoration: none;  /*eliminar la linea del texto*/
+}
+nav a:hover {  /*captura el comportamiento del mouse    */
+    color: #c78c19;
+    text-decoration: underline;
+}
+.productos{
+    width: 940px; /*ancho de los productos*/
+    margin: 0 auto;  /*margen automarico*/
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*es el tamaño de la caja, el borde de los items sera el limite del espacio que sera definido (el 
+    /*20px no sobrepasan el 30%*/
+   /* border-color: #000000; /*color del borde*/
+   /* border-width: 2px; /*ancho de borde*/
+    /*border-style: solid;  /*borde de linea solida, se puede modificar a otro tipo de lineas*/
+    border: 2px solid #000000;  /*primero el ancho, luego el estilo del borde y al final el color */
+    border-radius: 10px;    /*en esta variable vamos a declarar lo que es el radio de los bordes*/
+}
+.productos li:hover {
+    border-color:#c78c19;
+    
+}
+.productos li:active{   /*el active captura el click */
+    border-color:#088c19;
+}
+.productos h2{ 
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover h2 {  /*se aplicara el hover a la etiqueda h2*/
+    font-size: 32px;
+
+}
+
+.producto-descripcion{
+    font-size: 18px;
+
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}    
+
+footer{
+    text-align:center; /*alineamos el texto al centro */
+    background: url(imagenes/bg.jpg);  /*vamos a referenciar una imagen en html por medio de la url*/
+    padding: 40px;
+}
+.copyright {
+    color:#FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+
+}
